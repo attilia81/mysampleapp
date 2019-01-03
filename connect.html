@@ -1,0 +1,42 @@
+ <html>
+ <head>
+ <!--Integration du script de JQuery-->
+   <script type="text/javascript" src="jquery-3.1.0.js">
+   </script>
+   <!-- Mes codes Javascript-->
+   <script type="text/javascript">
+      $(document).ready(function(){
+	    $("#bouton1").click(function(){
+		   var textAfficher = $("#bouton1").text();
+		   if(textAfficher == ("Cacher Para 1"){
+		   $("#idPara1").hide();
+		   $("#bouton1").text("Afficher Para 1");
+		   }
+		   else{
+		     $("#idPara1").show();
+			 $("#bouton1").text("Cacher Para 1");
+		   }
+		    
+		   /*$("#idPara1").hide();
+		   if(bouton==bouton2){
+		      $("#bouton1").text("Afficher Para 1");
+		   }
+		   else{
+		      $("#bouton2").text("Afficher Para 2");
+		   }
+		  $("#bouton1").text("Afficher Para 1");
+		});
+		$("#bouton2").click(function(){
+		   $("#idPara2").hide();
+		    $("#bouton2").text("Afficher Para 2");*/
+		});
+	  });
+     </script>
+ </head>
+  <body>
+  <p id="idPara1"> Je suis le paragraphe 1 </p>
+   <p id="idPara2"> Je suis le paragraphe 2 </p>
+   <button id="bouton1"> Cacher Para 1 </button>
+    <button id="bouton2"> Cacher Para 2 </button>
+  </body>
+</html>
